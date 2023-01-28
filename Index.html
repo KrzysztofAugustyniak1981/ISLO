@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <main>
         <div class="main"> I &nbsp S.L.O. w Gorzowie Wielkopolskim &nbsp&nbsp</div>
@@ -40,28 +42,40 @@
     </div>
     <article>
         <div id="Article-list">
-        <div class="artic">
-            <div class="Article-Title" id="Art1" onclick="ArticleLoad">Artykuł 1</div>
-            <img src="/Image/X640.jpg">
-            <div class="Article-Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+            <div class="artic" id="FullArt1">
+                <div class="Article-Title" id="Art1" onclick="ArticleLoad(this.id)">Artykuł 1</div>
+                <img id="PhotoArt1" src="/Image/PhotoArt1.jpg">
+                <div id="TextArt1" class="Article-Text">1Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
+                    tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+            </div>
+            <div class="artic" id="FullArt2">
+                <div class="Article-Title" id="Art2" onclick="ArticleLoad(this.id)">Artykuł 2</div>
+                <img src="/Image/X640.jpg">
+                <div id="TextArt2" class="Article-Text">2Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
+                    tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+            </div>
+            <div class="artic" id="FullArt3">
+                <div class="Article-Title" id="Art3" onclick="ArticleLoad(this.id)">Artykuł 3</div>
+                <img src="/Image/X640.jpg">
+                <div id="TextArt3" class="Article-Text">3Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
+                    tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+            </div>
+            <div class="artic" id="FullArt4">
+                <div class="Article-Title" id="Art4" onclick="ArticleLoad(this.id)">Artykuł 4</div>
+                <img src="/Image/X640.jpg">
+                <div id="TextArt4" class="Article-Text">4Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
+                    tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+            </div>
         </div>
-        <div class="artic">
-            <div class="Article-Title" id="Art2" onclick="ArticleLoad">Artykuł 2</div>
-            <img src="/Image/X640.jpg">
-            <div class="Article-Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+        <div>
+            <div id="LoadArtTitle"></div>
+            <div id="LoadArtPhoto"></div>
+            <div id="LoadArtText"></div>
         </div>
-        <div class="artic">
-            <div class="Article-Title" id="Art3" onclick="ArticleLoad">Artykuł 3</div>
-            <img src="/Image/X640.jpg">
-            <div class="Article-Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
-        </div>
-        <div class="artic">
-            <div class="Article-Title" id="Art4" onclick="ArticleLoad">Artykuł 4</div>
-            <img src="/Image/X640.jpg">
-            <div class="Article-Text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
-        </div>
-    </div>
-    <div id="Article-view"></div>
     </article>
     <div class="address">
         <div>
@@ -91,4 +105,5 @@
     </div>
 </body>
 <script src="/Script.js"></script>
+
 </html>
