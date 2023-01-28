@@ -6,22 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I Społeczne Liceum Ogólnokształcące</title>
     <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <main> I S.L.O. w Gorzowie Wielkopolskim</main>
-    <nav>
-        <div>Aktualności</div>
-        <div>Plan Lekcji</div>
-        <div>Dziennik</div>
-        <div>Uczeń</div>
-    </nav>
+    <main>
+        <div class="main"> I &nbsp S.L.O. w Gorzowie Wielkopolskim &nbsp&nbsp</div>
+    </main>
+    <div class="navbar">
+        <a href="#Articles">Aktualności</a>
+        <div class="dropdown">
+            <button class="dropbtn">Plan Lekcji
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#kl1a">Kl 1A</a>
+                <a href="#kl1b">Kl 1B</a>
+                <a href="#kl2a">Kl 2A</a>
+                <a href="#kl3a">Kl 3A</a>
+                <a href="#kl4a">Kl 4A</a>
+            </div>
+        </div>
+        <a href="#https://adfslight.edukacja.gorzow.pl/">Dziennik</a>
+        <div class="dropdown">
+            <button class="dropbtn">Uczeń
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#Podręczniki">Podręczniki</a>
+                <a href="#Zajęciadodatkowe">Zajęcia dodatkowe</a>
+                <a href="#Galeria">Galeria</a>
+            </div>
+        </div>
+    </div>
     <article>
-        <div>
+        <div class="artic">
             <div>Artykuł 1</div>
+            <img src="/Image/X640.jpg" width="335px" height="207px">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+        </div>
+        <div class="artic">
+            <div>Artykuł 2</div>
+            <img src="/Image/X640.jpg" width="335px" height="207px">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+        </div>
+        <div class="artic">
+            <div>Artykuł 3</div>
+            <img src="/Image/X640.jpg" width="335px" height="207px">
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
+        </div>
+        <div class="artic">
+            <div>Artykuł 4</div>
+            <img src="/Image/X640.jpg" width="335px" height="207px">
             <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
         </div>
     </article>
-    <address>
+    <div class="address">
         <div>
             <div>Sekretariat:</div>
             <div>Godziny Otwarcia:</div>
@@ -37,12 +76,16 @@
             <div>E-mail: islo@SLO.pl</div>
         </div>
         <div>
-            <div>Znajdż nas:</div>
-            <div>FB</div>
-            <div>Insta</div>
-            <div>Googlemaps</div>
+            <div class="adres">Znajdż nas:</div>
+            <a href="#">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a>
         </div>
-    </address>
+    </div>
 </body>
 <script src="/Script.js"></script>
 </html>

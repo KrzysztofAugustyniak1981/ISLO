@@ -1,0 +1,113 @@
+body {
+  background-color: lightblue;
+}
+
+main {
+  background-image: url("/Image/foto1.jpg");
+  width: 1024px;
+  height: 480px;
+  color: rgb(173, 216, 230);
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: bottom;
+  text-shadow: 0 0 5px #000;
+  margin: auto;
+}
+.main {
+  margin: auto;
+  margin-top: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 1024px;
+  height: 480px;
+}
+
+.navbar {
+  margin: auto;
+  overflow: hidden;
+  background-color: rgb(62, 50, 50);
+  font-family: Arial;
+  width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+article {
+  max-width: 1024px;
+  margin: auto;
+  
+}
+
+.address {
+    width: 1024px;
+    
+    margin: auto;
+    background-color: thistle;
+    column-count: 3;
+    column-gap: 20px;
+    
+}
+
+.artic {
+    padding: 25px 80px;
+    width: 335px;
+    
+}
