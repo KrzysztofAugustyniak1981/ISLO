@@ -1,3 +1,8 @@
+/*JS do wyświetlania clikow 
+poprawa link dziennika 
+nadanie w html onlaod
+zmiana trzcionki ? */
+
 body {
   background-color: lightblue;
 }
@@ -96,18 +101,40 @@ article {
   
 }
 
-.address {
-    width: 1024px;
+
+#Article-list {
+  display: block;
+  width: 256px;
+}
+.artic {
+    padding: 25px 10px;
+    max-width: 256px;
     
-    margin: auto;
-    background-color: thistle;
-    column-count: 3;
-    column-gap: 20px;
     
 }
+.artic img {
+  max-width: 204px;
+  max-height: 128px;
+  margin: 5px 15px;
+}
+.Article-Title {
+  margin: 5px 20px;
+  cursor: pointer;
+}
 
-.artic {
-    padding: 25px 80px;
-    width: 335px;
-    
+.Article-Text {
+  padding: 0 5px 0 5px;
+  width: 206px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.address {
+  width: 1024px;
+  margin: auto;
+  background-color: thistle;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 10px;
 }
