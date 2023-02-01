@@ -18,14 +18,14 @@
         <a href="/Index.html">Aktualności</a>
         <div class="dropdown">
             <button class="dropbtn">Plan Lekcji
-                <i class="fa fa-caret-down"></i>
+                <i class="fa fa-caret-down"></i> 
             </button>
             <div class="dropdown-content">
-                <a href="" onclick="Plan" id="1A">Kl 1A</a>
-                <a href="" onclick="Plan" id="1B">Kl 1B</a>
-                <a href="" onclick="Plan" id="2A">Kl 2A</a>
-                <a href="" onclick="Plan" id="3A">Kl 3A</a>
-                <a href="" onclick="Plan" id="4A">Kl 4A</a>
+                <a onclick="LessonPlan(this.id)" id="1A">Kl 1A</a>
+                <a onclick="LessonPlan(this.id)" id="1B">Kl 1B</a>
+                <a onclick="LessonPlan(this.id)" id="2A">Kl 2A</a>
+                <a onclick="LessonPlan(this.id)" id="3A">Kl 3A</a>
+                <a onclick="LessonPlan(this.id)" id="4A">Kl 4A</a>
             </div>
         </div>
         <a target=”_blank” href="https://adfslight.edukacja.gorzow.pl/">Dziennik</a>
@@ -34,7 +34,7 @@
                 <i class="fa fa-caret-down"></i>
             </button>
             <div class="dropdown-content">
-                <a href="#Podręczniki">Podręczniki</a>
+                <a onclick="books()">Podręczniki</a>
                 <a href="#Zajęciadodatkowe">Zajęcia dodatkowe</a>
                 <a href="#Galeria">Galeria</a>
             </div>
@@ -51,21 +51,21 @@
             </div>
             <div class="artic" id="FullArt2">
                 <div class="Article-Title" id="Art2" onclick="ArticleLoad(this.id)">Artykuł 2</div>
-                <img src="/Image/X640.jpg">
+                <img id="PhotoArt2" src="/Image/PhotoArt2.jpg">
                 <div id="TextArt2" class="Article-Text">2Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
                     tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
             </div>
             <div class="artic" id="FullArt3">
                 <div class="Article-Title" id="Art3" onclick="ArticleLoad(this.id)">Artykuł 3</div>
-                <img src="/Image/X640.jpg">
+                <img id="PhotoArt3" src="/Image/PhotoArt3.jpg">
                 <div id="TextArt3" class="Article-Text">3Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
                     tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
             </div>
             <div class="artic" id="FullArt4">
                 <div class="Article-Title" id="Art4" onclick="ArticleLoad(this.id)">Artykuł 4</div>
-                <img src="/Image/X640.jpg">
+                <img id="PhotoArt4" src="/Image/PhotoArt4.jpg">
                 <div id="TextArt4" class="Article-Text">4Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Nostrum molestiae perferendis vero ipsum quod, non dignissimos nulla nobis debitis sapiente eaque
                     tempore totam laborum praesentium! Possimus error iste nostrum labore.</div>
@@ -104,6 +104,6 @@
         </div>
     </div>
 </body>
-<script src="/Script.js"></script>
+<script src="/Script.js" onload="start()"></script>
 
 </html>
