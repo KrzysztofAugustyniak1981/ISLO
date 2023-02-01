@@ -1,7 +1,9 @@
 /*JS do wyświetlania clikow 
-poprawa link dziennika 
-nadanie w html onlaod
-zmiana trzcionki ? */
+zmiana trzcionki ? 
+czy podpiąć do Mysql zaciągania danych planu lekcji 
+podręczniki z sql? + funckja zostaw maila wyślemy ci listę ?
+zajęcia dodatkowe lista z adresami email do zapisywania się
+Galeria zdjęć uczniów do wyświetlania czy osobna stronka ??*/
 
 body {
   background-color: lightblue;
@@ -98,13 +100,14 @@ main {
 article {
   max-width: 1024px;
   margin: auto;
-  
+  column-count: 2;
 }
 
 
 #Article-list {
-  display: block;
+  overflow: hidden;
   width: 256px;
+  
 }
 .artic {
     padding: 25px 10px;
@@ -137,4 +140,20 @@ article {
   column-count: 3;
   column-gap: 20px;
   padding: 10px;
+}
+#Load {
+  text-align: center;
+  width: 758px;
+  margin-left: -240px;
+  padding-top: 35px;
+}
+#LoadArtTitle {
+  width: 758px;
+  margin: 8px;
+}
+#LoadArtPhoto {
+  width: 758px;
+}
+#LoadArtText {
+  width: 758px;
 }
