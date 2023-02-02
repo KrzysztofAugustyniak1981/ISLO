@@ -44,3 +44,17 @@ function books() {
     document.getElementById("LoadArtTitle").innerHTML = Title;
     document.getElementById("LoadArtText").innerHTML = Text;
 }
+
+function activities() {
+    clean()
+    let Title = "Aby zapisać się na zajęcia dodatkowe proszę o kontakt z nauczycielem";
+    let ActicPolish = "<p>Język Polski - pon 16.<sup>30</sup> czw 18.<sup>30</sup><br>Janusz Nowak email: jnowak@zzz.pl</p><br>";
+    let ActivMat = "<p>Matematyka - wt 16.<sup>00</sup> pią 17.<sup>30</sup><br>Barbara Nowak email: bnowak@zzz.pl</p><br>";
+    let ActivCode = "<p>Informatyka - śr 17.<sup>30</sup><br>Zenon Pisalski email: zpisalski@zzz.pl</p><br>";
+    let ActivDance = "<p>Taniec - sob 11.<sup>15</sup><br>Elwira Skoczna email: eSkoczna@zzz.pl</p><br>";
+    let ActivPaint = "<p>Zajęcia Artystyczne - śr 15.<sup>00</sup> pią 18.<sup>30</sup><br>Helena Patataj email: HPatataj@zzz.pl</p><br>";
+
+    let Text = ActicPolish + ActivMat + ActivCode + ActivDance + ActivPaint;
+    document.getElementById("LoadArtTitle").innerHTML = Title;
+    document.getElementById("LoadArtText").innerHTML = Text;
+}
