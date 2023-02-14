@@ -3,11 +3,12 @@ Galeria zdjęć uczniów do wyświetlania czy osobna stronka ??*/
 
 body {
   background-color: lightblue;
+  width: 98%;
 }
 
 main {
   background-image: url("/Image/foto1.jpg");
-  width: 1024px;
+  width: 98%;
   height: 480px;
   color: rgb(173, 216, 230);
   font-size: 40px;
@@ -16,15 +17,12 @@ main {
   vertical-align: bottom;
   text-shadow: 0 0 5px #000;
   margin: auto;
-}
-.main {
-  margin: auto;
   margin-top: 3px;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  width: 1024px;
-  height: 480px;
+  
+  
 }
 
 .navbar {
@@ -32,7 +30,7 @@ main {
   overflow: hidden;
   background-color: rgb(62, 50, 50);
   font-family: Arial;
-  width: 1024px;
+  width: 98%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -130,7 +128,7 @@ article {
 }
 
 .address {
-  width: 1024px;
+  width: 94%;
   margin: auto;
   background-color: thistle;
   column-count: 3;
@@ -139,18 +137,52 @@ article {
 }
 #Load {
   text-align: center;
-  width: 758px;
+  width: 98%;
   margin-left: -240px;
   padding-top: 35px;
 }
 #LoadArtTitle {
-  width: 758px;
-  margin: 8px;
+  width: 100%;
+  margin: 12px;
   font-size: 20px;
 }
 #LoadArtPhoto {
-  width: 758px;
+  width: 90%;
 }
 #LoadArtText {
-  width: 758px;
+  width: 120%;
+}
+
+@media (max-width: 768px){
+  #Load {
+    margin: auto -120px;
+    width: 100%;
+  }
+  #LoadArtPhoto {
+    width: 100%;
+  }
+  #LoadArtPhoto img {
+    width: 100%;
+  }
+  #LoadArtText {
+    width: 100%;
+  }
+}
+
+@media (max-width: 414px) {
+  main {
+    background-size: 380px;
+    background-repeat: no-repeat;
+    height: 200px;
+  }
+  
+
+
+  #Article-list {
+    width: 80%;
+  }
+
+  #Load {
+    margin: auto -20px;
+  }
 }
